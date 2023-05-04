@@ -3,11 +3,17 @@
   padding: 0px;
   box-sizing: border-box;
   color: #7d87a4;
+  background-color: #0a192f;
+
   font-family: monospace;
 }
 
+.container {
+  background-color: #0a192f;
+}
 *body {
   background-color: #0a192f;
+
   color: #7d87a4;
 }
 
@@ -18,6 +24,7 @@ header {
   background-color: #0d1b32;
   padding: 1rem 4rem;
   font-size: 17px;
+  margin-top: 5px;
 }
 
 .headerRight {
@@ -47,7 +54,7 @@ header {
 }
 
 .logoHolder {
-  height: 20px;
+  height: 18px;
   width: 20px;
   display: flex;
   align-items: center;
@@ -55,7 +62,57 @@ header {
 }
 
 #logo {
-  height: 60px;
+  height: 50px;
   width: 60px;
   box-shadow: rgba(100 255 218) 0px 5px 15px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: 100%;
+  /* justify-content: center; */
+}
+
+.getBorder {
+  /* border: 2px solid black; */
+  /* width: 100%; */
+}
+
+.sideContainer {
+  width: 15%;
+  position: fixed;
+  height: 92vh;
+  font-size: 17px;
+}
+
+.leftContainter {
+  left: 0;
+}
+
+.rightContainer {
+  right: 0;
+}
+.centerContainer {
+  width: 70%;
+  height: 2000px;
+  margin: 0 auto;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(360deg);
+}
+
+.contentLeft {
+  position: absolute;
+  bottom: 0;
+}
+.contentRight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* right: 0; */
 }
