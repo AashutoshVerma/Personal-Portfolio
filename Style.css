@@ -59,6 +59,7 @@ header {
 #logo {
   height: 50px;
   width: 60px;
+
   box-shadow: rgba(100 255 218) 0px 5px 15px;
 }
 
@@ -331,4 +332,125 @@ header {
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem;
+}
+
+.otherProject {
+  /* border: 2px solid #64ffda; */
+  width: 100%;
+  height: 48rem;
+  margin-top: 8rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: left;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+
+.otherProjHeading {
+  font-size: 2rem;
+  /* display: flex; */
+  margin: 2rem;
+  color: #ccd6f6;
+  /* flex-direction: ; */
+  text-align: center;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.otherProjectCard {
+  /* border: 2px solid #64ffda; */
+  display: flex;
+  flex-direction: column;
+}
+
+.top3card {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid #64ffda; */
+}
+
+.bottom3card {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid #64ffda; */
+}
+
+.otherProjCardElement {
+  border: 2px solid #64ffda;
+  height: fit-content;
+  transition: 0.5s all ease-out;
+  border-radius: 10px;
+  margin: 1rem;
+  width: 33%;
+  padding: 1rem;
+}
+
+.otherProjCardElement:hover {
+  transform: translateY(-10px);
+  scale: 1.05;
+}
+
+.cardheader {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.putinRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardTitle {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.cardDesc {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.otherProjTech ul {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.1rem;
+  list-style: none;
+}
+
+.getinTouch {
+  /* border: 2px solid #64ffda; */
+  width: 100%;
+  height: 48rem;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+
+.getinTouchHeading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.getinTouchDesc {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.getinTouchButtonHolder {
+  padding: 2rem;
+}
+.getinTouchButton {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border: 2px solid #64ffda;
+  border-radius: 5px;
 }
