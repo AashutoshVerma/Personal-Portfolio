@@ -7,7 +7,6 @@
 
   font-family: monospace;
 }
-
 .container {
   background-color: #0a192f;
 }
@@ -27,23 +26,35 @@ header {
   margin-top: 5px;
 }
 
+.floatOnHover {
+  transition: 0.5s all ease-out;
+}
+
+.floatOnHover:hover {
+  transform: translateY(-10px);
+  scale: 1.2;
+}
+
 .headerRight {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 80px;
+  background-color: #0d1b32;
 }
 .headerOptions {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+  background-color: #0d1b32;
 }
 
 .headerOptionElement {
   margin-right: 20px;
+  background-color: #0d1b32;
 }
 
-.headerOptionElement:hover {
+.headerOptionElement a:hover {
   cursor: pointer;
   color: #64ffda;
 }
@@ -428,9 +439,14 @@ header {
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 0.1rem;
+  /* justify-content: space-evenly;
+  
+  gap: 0.1rem; */
   list-style: none;
+}
+
+.otherProjTech ul li {
+  margin-right: 1.5rem;
 }
 
 .getinTouch {
