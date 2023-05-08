@@ -84,7 +84,7 @@ header {
 }
 
 .leftContainter {
-  left: 0;
+  right: 0;
 }
 
 .rightContainer {
@@ -104,8 +104,12 @@ header {
 
 .contentLeft {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
 }
 .contentRight {
   position: absolute;
@@ -388,6 +392,15 @@ header {
 .otherProjCardElement:hover {
   transform: translateY(-10px);
   scale: 1.05;
+}
+
+.cardGitLink {
+  transition: 0.5s all ease-out;
+}
+
+.cardGitLink:hover {
+  transform: translateY(-10px);
+  scale: 1.25;
 }
 
 .cardheader {
