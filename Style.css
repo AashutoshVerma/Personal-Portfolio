@@ -201,21 +201,48 @@ header {
 }
 
 .aboutContent {
+  /* border: 2px solid #64ffda; */
   display: flex;
+  flex-wrap: wrap;
   /* flex-direction: row; */
   padding: 2rem 2rem;
 }
 
 .aboutDesc {
+  /* border: 2px solid #64ffda; */
   width: 60%;
   font-size: 1.2rem;
 }
 
 .aboutImg {
+  position: relative;
   width: 39%;
-  display: flex;
-  justify-content: end;
+  padding: 3rem 11rem;
   /* border: 2px solid #64ffda; */
+}
+
+/*  */
+
+.imgBox {
+  border: 2px solid #64ffda;
+  width: 200px;
+  height: 300px;
+}
+
+.aboutImg img {
+  border: 2px solid #64ffda;
+  display: block;
+  margin-top: -24.2rem;
+  margin-left: -1.3rem;
+  width: 200px;
+  height: 300px;
+  /* object-fit: cover; */
+  transform: translate(0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutImg img:hover {
+  transform: translate(-10px, -10px);
 }
 
 .work {
