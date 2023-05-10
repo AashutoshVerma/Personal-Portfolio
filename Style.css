@@ -211,7 +211,7 @@ header {
 .aboutDesc {
   /* border: 2px solid #64ffda; */
   width: 60%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .aboutImg {
@@ -326,18 +326,26 @@ header {
 }
 
 #proj1 {
-  border: 2px solid #64ffda;
+  border-left: 2px solid #64ffda;
+  border-bottom: 2px solid #64ffda;
   display: flex;
+  padding: 2rem;
 }
 
 #proj2 {
-  border: 2px solid #64ffda;
+  /* border: 2px solid #64ffda; */
   display: flex;
+  border-right: 2px solid #64ffda;
+  border-bottom: 2px solid #64ffda;
+  padding: 2rem;
 }
 
 #proj3 {
-  border: 2px solid #64ffda;
+  /* border: 2px solid #64ffda;  */
   display: flex;
+  padding: 2rem;
+
+  border-left: 2px solid #64ffda;
 }
 .projectHeading {
   font-size: 2rem;
@@ -366,12 +374,13 @@ header {
 }
 
 .overlay {
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
   background-color: #0a192f;
   opacity: 0.4;
+  border: 2px solid #64ffda;
   transition: opacity 0.5s ease;
 }
 .new-image {
@@ -382,7 +391,6 @@ header {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  z-index: ;
   transition: opacity 1s all ease-out;
 }
 
@@ -399,6 +407,7 @@ header {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  padding: 1rem;
 }
 
 .projInfo {
@@ -409,6 +418,16 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
+.projInfo2 {
+  width: 40%;
+  /* border: 2px solid #64ffda; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .projTitle {
   font-weight: 900;
   font-size: 2rem;
@@ -424,6 +443,15 @@ header {
   padding: 1rem;
   margin-left: -200px;
   z-index: 1;
+  background-color: #112240;
+}
+.projDesc2 {
+  text-align: left;
+  box-shadow: #0a192f 0px 5px 15px;
+  width: 36rem;
+  padding: 1rem;
+  margin-left: 14px;
+  z-index: 2;
   background-color: #112240;
 }
 
