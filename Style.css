@@ -315,15 +315,30 @@ header {
 .project {
   /* border: 2px solid #64ffda; */
   width: 100%;
-  height: 48rem;
+  height: 80rem;
   margin-top: 8rem;
   display: flex;
   /* justify-content: center; */
   align-items: left;
   flex-direction: column;
+  gap: 2rem;
   padding: 2rem 2rem;
 }
 
+#proj1 {
+  border: 2px solid #64ffda;
+  display: flex;
+}
+
+#proj2 {
+  border: 2px solid #64ffda;
+  display: flex;
+}
+
+#proj3 {
+  border: 2px solid #64ffda;
+  display: flex;
+}
 .projectHeading {
   font-size: 2rem;
   /* display: flex; */
@@ -334,22 +349,65 @@ header {
 
 .projectContent {
   display: flex;
-
+  flex-direction: column;
   padding: 2rem;
   font-size: 1.3rem;
 }
 
 .projImg {
-  width: 60%;
-  border: 2px solid #64ffda;
+  width: 59%;
+  /* border: 2px solid #64ffda; */
+  /* padding: 2rem; */
+  /* position: relative; */
+  padding: 0.5rem;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a192f;
+  opacity: 0.4;
+  transition: opacity 0.5s ease;
+}
+.new-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  z-index: ;
+  transition: opacity 1s all ease-out;
+}
+
+.projImg:hover .new-image {
+  opacity: 1;
+}
+
+.projImg:hover .overlay {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.projImg img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .projInfo {
   width: 40%;
-  border: 2px solid #64ffda;
+  /* border: 2px solid #64ffda; */
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  justify-content: center;
 }
 .projTitle {
   font-weight: 900;
@@ -358,6 +416,15 @@ header {
 }
 .projDesc {
   text-align: right;
+  /* position: absolute; */
+
+  /* border: 2px solid #64ffda; */
+  box-shadow: #0a192f 0px 5px 15px;
+  width: 36rem;
+  padding: 1rem;
+  margin-left: -200px;
+  z-index: 1;
+  background-color: #112240;
 }
 
 .projTech {
