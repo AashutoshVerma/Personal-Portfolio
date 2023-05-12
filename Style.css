@@ -191,8 +191,10 @@ header {
 }
 
 .aboutHeading {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
   /* display: flex; */
+  padding-left: 2rem;
   margin: 1rem;
   /* flex-direction: ; */
 }
@@ -248,7 +250,7 @@ header {
 .work {
   /* border: 2px solid #64ffda; */
   width: 100%;
-  height: 48rem;
+  height: 40rem;
   margin-top: 8rem;
   display: flex;
   /* justify-content: center; */
@@ -258,10 +260,11 @@ header {
 }
 
 .workHeading {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
   /* display: flex; */
-  margin: 2rem;
-  color: #ccd6f6;
+  padding-left: 2rem;
+  margin: 1rem;
   /* flex-direction: ; */
 }
 
@@ -273,22 +276,37 @@ header {
 
 .workList {
   width: 20%;
+  margin-right: 2rem;
+  border-right: 2px solid #64ffda;
   /* border: 2px solid white; */
 }
 
 .workList ul {
   list-style: none;
-  padding: 1rem 0.5rem;
+  padding: -3rem 0.5rem;
 }
 
 .workList ul li {
+  /* border: 2px solid white; */
+
   padding: 0.2rem 0.2rem;
-  margin: 0.2rem;
+  margin: 0.5rem;
 }
 
 .workList ul li:hover {
-  color: white;
+  background-color: #1c243b;
+  opacity: 0.5;
+  color: #64ffda;
+  border-left: 2px solid #64ffda;
 }
+
+.selected {
+  border-left: 2px solid #64ffda;
+  background-color: #1c243b;
+  opacity: 0.5;
+  color: #64ffda;
+}
+
 .workInfo {
   width: 80%;
   /* border: 2px solid white; */
@@ -310,6 +328,24 @@ header {
 .workDescpoints {
   list-style: none;
   padding: 1rem 2rem;
+}
+
+.DesworkInfo {
+  display: none;
+  /* padding: 2rem; */
+}
+.PCworkInfo {
+  display: none;
+}
+.MLworkInfo {
+  display: none;
+}
+.facebookworkInfo {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .project {
@@ -348,10 +384,11 @@ header {
   border-left: 2px solid #64ffda;
 }
 .projectHeading {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
   /* display: flex; */
-  margin: 2rem;
-  color: #ccd6f6;
+  padding-left: 2rem;
+  /* margin: 1rem; */
   /* flex-direction: ; */
 }
 
@@ -484,19 +521,18 @@ header {
 }
 
 .otherProjHeading {
-  font-size: 2rem;
-  /* display: flex; */
-  margin: 2rem;
-  color: #ccd6f6;
-  /* flex-direction: ; */
-  text-align: center;
+  font-size: 2.5rem;
   font-weight: 900;
-  padding: 1rem;
+  /* display: flex; */
+  padding-left: 2rem;
+  margin: 1rem;
+  /* flex-direction: ; */
 }
 
 .otherProjectCard {
   /* border: 2px solid #64ffda; */
   display: flex;
+  margin-top: 2rem;
   flex-direction: column;
 }
 
