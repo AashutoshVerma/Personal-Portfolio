@@ -171,11 +171,27 @@ header {
   margin-top: 4rem;
 }
 
+.nav {
+}
+
+.hide-nav {
+  transform: translateY(-100%);
+  transition: transform 0.2s ease-out;
+}
+
 .resume {
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   font-size: 1.5rem;
   border: 2px solid #64ffda;
+  transition: 0.5s all ease-in-out;
   border-radius: 5px;
+}
+
+.resume:hover {
+  background-color: #64ffda;
+  color: #0d1b32;
+  transform: translateY(-5px);
+  scale: 1;
 }
 
 .aboutMe {
@@ -214,6 +230,7 @@ header {
   /* border: 2px solid #64ffda; */
   width: 60%;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .aboutImg {
@@ -259,6 +276,9 @@ header {
   padding: 2rem 2rem;
 }
 
+.contentRight a:hover {
+  color: #64ffda;
+}
 .workHeading {
   font-size: 2.5rem;
   font-weight: 900;
@@ -532,7 +552,7 @@ header {
 .otherProjectCard {
   /* border: 2px solid #64ffda; */
   display: flex;
-  margin-top: 2rem;
+  margin-top: 2re;
   flex-direction: column;
 }
 
@@ -640,4 +660,12 @@ header {
   font-size: 1.5rem;
   border: 2px solid #64ffda;
   border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+
+.getinTouchButton:hover {
+  background-color: #64ffda;
+  color: #0d1b32;
+  transform: translateY(-10px);
+  scale: 1.1;
 }
