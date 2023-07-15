@@ -4,15 +4,35 @@
   box-sizing: border-box;
   color: #7d87a4;
   background-color: #0a192f;
-
+  scroll-behavior: smooth;
   font-family: monospace;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #64ffda;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
 }
 .container {
   background-color: #0a192f;
 }
 *body {
   background-color: #0a192f;
-
+  object-fit: contain;
   color: #7d87a4;
 }
 
@@ -42,6 +62,7 @@ header {
   gap: 80px;
   background-color: #0d1b32;
 }
+
 .headerOptions {
   display: flex;
   list-style: none;
@@ -95,7 +116,7 @@ header {
 }
 
 .leftContainter {
-  right: 0;
+  left: 0;
 }
 
 .rightContainer {
@@ -162,7 +183,7 @@ header {
 }
 
 .aboutMeDesc {
-  width: 600px;
+  /* width: 600px; */
   font-size: 20px;
 }
 
@@ -421,9 +442,6 @@ header {
 
 .projImg {
   width: 59%;
-  /* border: 2px solid #64ffda; */
-  /* padding: 2rem; */
-  /* position: relative; */
   padding: 0.5rem;
   position: relative;
   display: inline-block;
@@ -461,7 +479,7 @@ header {
 }
 
 .projImg img {
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   width: 100%;
   padding: 1rem;
@@ -668,4 +686,178 @@ header {
   color: #0d1b32;
   transform: translateY(-10px);
   scale: 1.1;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerRight {
+    flex-direction: column;
+  }
+  .headerOptions {
+    display: none;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .resume {
+    padding: 0.5rem;
+  }
+  .sideContainer {
+    display: none;
+  }
+  .centerContainer {
+    width: 100%;
+  }
+  .resume {
+    /* display: none; */
+  }
+
+  .myName {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .somethingAboutme {
+    font-size: 28px;
+  }
+
+  .aboutMe {
+    height: 115rem;
+  }
+  .aboutDesc {
+    width: auto;
+  }
+
+  .aboutImg {
+    padding: 4.8rem;
+  }
+
+  .work {
+    height: 46rem;
+  }
+  .workHeading {
+    font-size: 2rem;
+    padding-left: 0;
+  }
+
+  .workContent {
+    font-size: 17px;
+    padding: 1rem 0rem;
+    flex-wrap: wrap;
+  }
+
+  .workList {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #64ffda;
+    margin-right: 0;
+  }
+  .workList ul {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 1rem;
+  }
+
+  .workListElement {
+    /* width: 50%; */
+  }
+  .workDescpoints {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .PCworkInfo {
+    margin: 1rem;
+  }
+
+  .DesworkInfo {
+    margin: 1rem;
+  }
+
+  #project {
+    height: 160rem;
+  }
+
+  .projectContent {
+    padding: 1rem;
+  }
+  .projectHeading {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+  }
+  .projImg {
+    width: 100%;
+    padding: 0;
+  }
+
+  #proj1 {
+    padding: 0;
+    flex-direction: column;
+  }
+  #proj2 {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .projInfo {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .projInfo2 {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .projDesc {
+    text-align: left;
+    margin: 0;
+    width: auto;
+  }
+  .projDesc2 {
+    text-align: left;
+    margin: 0;
+    width: auto;
+  }
+
+  .projTech {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .otherProject {
+    height: 80rem;
+  }
+  .otherProjHeading {
+    font-size: 2rem;
+    padding: 0px;
+  }
+
+  .top3card {
+    flex-direction: column;
+  }
+  .bottom3card {
+    flex-direction: column;
+  }
+
+  .otherProjCardElement {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .getinTouch {
+    height: 50rem;
+  }
+  .getinTouchHeading {
+    font-size: 2rem;
+  }
+  .getinTouchDesc {
+    font-size: 1.2rem;
+  }
 }

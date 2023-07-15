@@ -134,7 +134,7 @@
               <div class="PCworkInfo active ">
                 <p class="workDescHeading">Placement Coordinator</p>
                 <p class="workDescDuration">December, 2022  - Present</p>
-                <p class="workDesc"><ul><li class="workDescpoints">We as placement Coordinators are responsible to communicate to various companies to
+                <p class="workDesc"><ul><li class="workDescpoints"> We as placement Coordinators are responsible to communicate to various companies to
                   conduct the placement Drive.
                   </li>
                 <li class="workDescpoints">With this Position comes the big responsibility, and has made me learn various new things about professionalism, which includes Diplomacy, Professional etiquette and Team work. </li>
@@ -163,92 +163,7 @@
                 <li class="workDescpoints">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam accusamus, ullam quos in excepturi!</li></ul></p>
               </div>
               <!-- <div class="default active">work info will be displayed here</div> -->
-              <script>
-                const option = document.querySelector(".workListElement")
-                const PCbutton = document.getElementById("PC");
-              const PCdiv = document.querySelector(".PCworkInfo");
-                const Desbutton = document.getElementById("Des");
-              const Desdiv = document.querySelector(".DesworkInfo");
-                const facebookbutton = document.getElementById("facebook");
-              const facebookdiv = document.querySelector(".facebookworkInfo");
-                const MLbutton = document.getElementById("ML");
-              const MLdiv = document.querySelector(".MLworkInfo");
-                // const defaultmsg = document.querySelector(".default")
-        
-                // option.addEventListener("click",function(){
-                // tcsdiv.classList.toggle(".active");
-                // googlediv.classList.toggle("active");
-                // microsoftdiv.classList.toggle("active");
-                // facebookdiv.classList.toggle("active");
-                    
-                // });
-    
-    
-              PCbutton.addEventListener("click", function () {
-                console.log("TCS option clicked");
-    
-                PCdiv.classList.add("active");
-                Desdiv.classList.remove("active");
-                MLdiv.classList.remove("active");
-                facebookdiv.classList.remove("active");
               
-                PCbutton.classList.add("selected");
-                Desbutton.classList.remove("selected");
-                MLbutton.classList.remove("selected");
-                facebookbutton.classList.remove("selected");
-              });
-    
-    
-              Desbutton.addEventListener("click", function () {
-                console.log("Des option clicked");
-    
-                // defaultmsg.classList.toggle("active");
-                PCdiv.classList.remove("active");
-                Desdiv.classList.add("active");
-                MLdiv.classList.remove("active");
-                facebookdiv.classList.remove("active");
-              
-                PCbutton.classList.remove("selected");
-                Desbutton.classList.add("selected");
-                MLbutton.classList.remove("selected");
-                facebookbutton.classList.remove("selected");
-              
-              });
-    
-    
-              MLbutton.addEventListener("click", function () {
-                console.log("ML option clicked");
-    
-                PCdiv.classList.remove("active");
-                // defaultmsg.classList.toggle("active");
-                Desdiv.classList.remove("active");
-                MLdiv.classList.add("active");
-                facebookdiv.classList.remove("active");
-
-                PCbutton.classList.remove("selected");
-                Desbutton.classList.remove("selected");
-                MLbutton.classList.add("selected");
-                facebookbutton.classList.remove("selected");
-              
-
-
-              });
-              facebookbutton.addEventListener("click", function () {
-                console.log("facebook option clicked");
-    
-                PCdiv.classList.remove("active");
-                Desdiv.classList.remove("active");
-                // defaultmsg.classList.add("active");
-                MLdiv.classList.remove("active");
-                facebookdiv.classList.add("active");
-
-                PCbutton.classList.remove("selected");
-                Desbutton.classList.remote("selected");
-                MLbutton.classList.remove("selected");
-                facebookbutton.classList.add("selected");
-
-              });
-              </script>
             </div>
           </div>
 
@@ -377,7 +292,7 @@
                 <div class="otherProjTech"><ul><li class="projTechElement">Python</li>
                 <li class="projTechElement">SMTP</li>
                 <li class="projTechElement">Email</li>
-                <li class="projTechElement">MongoDb</li></ul></div></div>
+            </ul></div></div>
               </div>
               <div class="bottom3card">
                 <div class="otherProjCardElement">  <div class="cardheader putinRow">
@@ -428,5 +343,49 @@
         </div>
       </div>
     </div>
+    <script>
+                const option = document.querySelector(".workListElement")
+                const PCbutton = document.getElementById("PC");
+              const PCdiv = document.querySelector(".PCworkInfo");
+                const Desbutton = document.getElementById("Des");
+              const Desdiv = document.querySelector(".DesworkInfo");
+                const facebookbutton = document.getElementById("facebook");
+              const facebookdiv = document.querySelector(".facebookworkInfo");
+                const MLbutton = document.getElementById("ML");
+              const MLdiv = document.querySelector(".MLworkInfo");
+               
+    
+              PCbutton.addEventListener("click", function () {
+                console.log("TCS option clicked");
+    
+                PCdiv.classList.add("active");
+                Desdiv.classList.remove("active");
+                MLdiv.classList.remove("active");
+                facebookdiv.classList.remove("active");
+              
+                PCbutton.classList.add("selected");
+                Desbutton.classList.remove("selected");
+                MLbutton.classList.remove("selected");
+                facebookbutton.classList.remove("selected");
+              });
+    
+    
+              Desbutton.addEventListener("click", function () {
+                console.log("Des option clicked");
+    
+                // defaultmsg.classList.toggle("active");
+                PCdiv.classList.remove("active");
+                Desdiv.classList.add("active");
+                MLdiv.classList.remove("active");
+                facebookdiv.classList.remove("active");
+              
+                PCbutton.classList.remove("selected");
+                Desbutton.classList.add("selected");
+                MLbutton.classList.remove("selected");
+                facebookbutton.classList.remove("selected");
+              
+              });
+    
+                  </script>
   </body>
 </html>
