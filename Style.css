@@ -471,6 +471,7 @@ header {
 
 .projImg:hover .new-image {
   opacity: 1;
+  z-index: 1;
 }
 
 .projImg:hover .overlay {
@@ -732,6 +733,15 @@ header {
     width: auto;
   }
 
+  .aboutHeading {
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    border-bottom: 2px solid #64ffda;
+    margin: 0;
+    padding: 0rem 1rem;
+    font-size: 2rem;
+  }
   .aboutImg {
     padding: 4.8rem;
   }
@@ -742,6 +752,7 @@ header {
   .workHeading {
     font-size: 2rem;
     padding-left: 0;
+    top: 1rem;
   }
 
   .workContent {
@@ -791,6 +802,10 @@ header {
   .projectHeading {
     font-size: 2rem;
     padding: 0rem 1rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 3;
+    border-bottom: 2px solid #64ffda;
   }
   .projImg {
     width: 100%;
@@ -836,7 +851,12 @@ header {
   }
   .otherProjHeading {
     font-size: 2rem;
-    padding: 0px;
+    padding-left: 0;
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    border-bottom: 2px solid #64ffda;
+    margin: 0;
   }
 
   .top3card {
@@ -859,5 +879,14 @@ header {
   }
   .getinTouchDesc {
     font-size: 1.2rem;
+  }
+
+  .workHeading {
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    border-bottom: 2px solid #64ffda;
+    margin: 0;
+    padding: 0rem 1rem;
   }
 }
