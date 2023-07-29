@@ -733,13 +733,19 @@ header {
     width: auto;
   }
 
-  .aboutHeading {
+  .headstyle {
+    top: 0rem;
     position: sticky;
-    top: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .aboutHeading {
+    /* position: sticky; */
+    /* top: 0rem; */
     z-index: 1;
     border-bottom: 2px solid #64ffda;
     margin: 0;
-    padding: 0rem 1rem;
+    /* padding: 01.5rem 1rem; */
     font-size: 2rem;
   }
   .aboutImg {
@@ -751,8 +757,8 @@ header {
   }
   .workHeading {
     font-size: 2rem;
-    padding-left: 0;
-    top: 1rem;
+    /* padding-left: 0;
+    top: 1rem; */
   }
 
   .workContent {
